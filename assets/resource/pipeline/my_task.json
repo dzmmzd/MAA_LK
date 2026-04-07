@@ -1,12 +1,40 @@
-{
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+﻿{
+    "更新方舟": {
+        "next": [
+            "识别下载按钮"
+        ]
     },
-    "OcrTask": {}
+    "识别游戏中心": {
+        "recognition": "OCR",
+        "expected": "游戏中心",
+        "threshold": 0.5,
+        "action": "Click",
+        "next": [
+            "识别下载按钮"
+        ]
+    },
+    "识别下载按钮": {
+        "recognition": "TemplateMatch",
+        "template": "game_center_download.png",
+        "threshold": 0.8,
+        "action": "Click",
+        "next": [
+            "识别更新"
+        ]
+    },
+    "识别更新": {
+        "recognition": "OCR",
+        "expected": "更新",
+        "threshold": 0.5,
+        "action": "Click",
+        "next": [
+            "识别升级"
+        ]
+    },
+    "识别升级": {
+        "recognition": "OCR",
+        "expected": "升级",
+        "threshold": 0.5,
+        "action": "Click"
+    }
 }
