@@ -2,21 +2,21 @@
     "interface_version": 2,
     "name": "Maa_LK",
     "description": "明日方舟更新助手",
+    "github": "https://github.com/dzmmzd/MAA_LK",
+    "version": "1.0.0",
     "contact": "QQ群: 595990173",
     "license": "MIT",
     "welcome": "欢迎使用 Maa_LK!",
-    "github": "https://github.com/dzmmzd/MAA_LK",
-    "version": "1.0.0",
     "controller": [
         {
-            "name": "安卓端",
+            "name": "Android",
             "type": "Adb",
             "display_short_side": 720
         }
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "Official",
             "path": [
                 "./resource"
             ]
